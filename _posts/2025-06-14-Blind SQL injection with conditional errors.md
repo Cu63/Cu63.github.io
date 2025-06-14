@@ -1,3 +1,13 @@
+---
+title: "Blind SQL injection"
+date: 2025-06-14T13:37:00-04:00
+categories:
+  - blog
+tags:
+  - writeup
+  - web
+---
+
 ## Scope
 
 [ссылка на лабу](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors)

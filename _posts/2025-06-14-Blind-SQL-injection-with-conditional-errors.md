@@ -1,5 +1,5 @@
 ---
-title: "Test post"
+title: "Blind SQL injection with conditional errors"
 date: 2025-06-14T13:37:00-04:00
 categories:
   - blog

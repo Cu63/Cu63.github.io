@@ -46,7 +46,7 @@ Te: trailers
 Connection: keep-alive
 ```
 
-Скорее всего уязвимым является `TrackingId`. Попробую посмотреть, как изменится ответ, при не верном значении `TrackingId=qj7wR5JE68DIePPM:
+Скорее всего уязвимым является `TrackingId`. Попробую посмотреть, как изменится ответ, при не верном значении `TrackingId=qj7wR5JE68DIePPM`:
 
 ```HTTP
 HTTP/2 200 OK

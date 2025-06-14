@@ -10,7 +10,7 @@ tags:
 
 ## Scope
 
-[ссылка на лабу][https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors]
+[ссылка на лабу](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors)
 
 ```
 https://0ae90054044f120581a76bcc00c300ed.web-security-academy.net/

@@ -1,6 +1,6 @@
 ---
 title: "Blind SQL injection with conditional errors"
-date: 2025-04-18T15:34:30-04:00
+date: 2025-06-13T15:34:30-04:00
 categories:
   - blog
 tags:

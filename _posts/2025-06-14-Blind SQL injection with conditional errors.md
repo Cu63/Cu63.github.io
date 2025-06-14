@@ -9,8 +9,6 @@ tags:
 
 ## Scope
 
-[ссылка на лабу](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors)
-
 ```
 https://0ae90054044f120581a76bcc00c300ed.web-security-academy.net/
 ```
@@ -20,6 +18,7 @@ https://0ae90054044f120581a76bcc00c300ed.web-security-academy.net/
 В БД есть таблицы с именам `users` и колонками `username` и `password`.
 
 Нужно получить информацию из БД, чтобы зайти в аккаунт `administrator`.
+
 ## Notes
 
 Во-первых, из условия известно, что уязвимость находится в `Cookie`, значит есть смысл сразу смотреть `HTTP` запросы.

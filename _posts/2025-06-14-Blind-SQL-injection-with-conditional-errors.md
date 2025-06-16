@@ -15,11 +15,11 @@ tags: [первый, тест]
 
 ## Запуск
 
-![IMG](assets/Clop2_img/1.png){: .align-center}
-![IMG](assets/Clop2_img/2.png){: .align-center}
-![IMG](assets/Clop2_img/3.png){: .align-center}
-![IMG](assets/Clop2_img/4.png){: .align-center}
-![IMG](assets/Clop2_img/5.png){: .align-center}
+![IMG](/assets/Clop2_img/1.png){: .align-center}
+![IMG](/assets/Clop2_img/2.png){: .align-center}
+![IMG](/assets/Clop2_img/3.png){: .align-center}
+![IMG](/assets/Clop2_img/4.png){: .align-center}
+![IMG](/assets/Clop2_img/5.png){: .align-center}
 
 На виртуальной машине я создал файл с неким таинственным содержимым) Вам самим предстоит это узнать) Этот файл называется `important_file.txt`. После запуска рядом с ним появились 2 файла: `important_file.txt.C_I_0P` и `README_C_I_0P.TXT`. Как и ожидалось))
 

@@ -15,7 +15,7 @@ tags: [первый, тест]
 
 ## Запуск
 
-![IMG](/images/Clop2_img/1.png)
+![IMG](/assets/images/Cl0p2_img/1.jpg)
 ![IMG](/images/Clop2_img/2.png)
 ![IMG](/images/Clop2_img/3.png)
 ![IMG](/images/Clop2_img/4.png)

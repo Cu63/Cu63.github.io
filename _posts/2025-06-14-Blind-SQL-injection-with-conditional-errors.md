@@ -1,29 +1,166 @@
 ---
-title: "Blind SQL injection with conditional errors"
-date: 2025-06-13T15:34:30-04:00
-categories:
-  - blog
-tags:
-  - Jekyll
-  - update
+title: "Cl0p. Часть 2. Динамический анализ"
+date: 2024-06-17
+categories: [Блог, Jekyll]
+tags: [первый, тест]
 ---
 
-You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Это продолжение предыдущего поста.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+# Динамический анализ
 
-Jekyll also offers powerful support for code snippets:
+Думаю, что весело будет запустить малварь на вируальной машиние, чтобы посмотреть его в работе. Так как таблица символов не была удалена, то все понятно по статическому анализу. Но, хочу попробовать собрать нужные данные, чтобы написать для него декриптор)
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+> Обязательно сделайте снапшот перед запуском. Так же рекомендую выключить интернет, общие папки и отключить все `USB`-устройства.
+
+## Запуск
+
+![[telegram-cloud-photo-size-2-5359546993141214960-x.jpg]]
+
+На виртуальной машине я создал файл с неким таинственным содержимым) Вам самим предстоит это узнать) Этот файл называется `important_file.txt`. После запуска рядом с ним появились 2 файла: `important_file.txt.C_I_0P` и `README_C_I_0P.TXT`. Как и ожидалось))
+
+![[Pasted image 20250612175108.png]]
+
+С помощью утилиты `hexdupm` посмотрю содержимое этих файлов:
+
+`important_file.txt`:
+
+```bash
+hexdump -C important_file.txt
+00000000  4a be 11 18 a9 c4 e9 2e  b8 fe 88 cb 4e a0 df 2e  |J...........N...|
+00000010  e5 4f dd c9 71 91 01 9e  24 d9 f0 cf              |.O..q...$...|
+0000001c
 ```
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+`important_file.txt.C_I_0P`
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+```bash
+hexdump -C important_file.txt.C_I_0P 
+00000000  00 ae 8b b7 4f d2 8f 7d  f5 15 f5 fa a6 cc a5 76  |....O..}.......v|
+00000010  d5 7d 41 cc 2d c1 be 2e  de 9b c0 a9 98 d6 8b d4  |.}A.-...........|
+00000020  3d e0 23 68 0c 44 71 71  35 81 e5 3b 54 35 e9 6d  |=.#h.Dqq5..;T5.m|
+00000030  f6 07 83 e3 54 3d 6f 22  3f ce 5f b0 36 fb e5 96  |....T=o"?._.6...|
+00000040  8a 51 5a 40 e4 ef c5 d6  9c 1e 1f 9e 02 07 bd 8f  |.QZ@............|
+00000050  21 8b 2c 2a c9 c8 31 77  b5 90 38 3e e0 5d 85 92  |!.,*..1w..8>.]..|
+00000060  59 fc 26 70 4b 97 05 fd  01 68 f3 3a 2b b1 29 79  |Y.&pK....h.:+.)y|
+00000070  ec 96 da 9e 74 2d 00 00  00 00 00 00 00 00 00 00  |....t-..........|
+00000080  00 ae 7e 03 00 80 81 00  00 01 00 00 00 00 00 00  |..~.............|
+00000090  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+000000a0  00 1c 00 00 00 00 00 00  00 00 10 00 00 08 00 00  |................|
+000000b0  00 00 00 00 00 d1 e8 4a  68 13 67 a3 17 d1 e8 4a  |.......Jh.g....J|
+000000c0  68 13 67 a3 17 fd e8 4a  68 64 1c 3c 2d ae 7e 03  |h.g....Jhd.<-.~.|
+000000d0  00 00 00 00 00 01 00 00  00 00 40 80 40 1c 00 00  |..........@.@...|
+000000e0  00 00 00 00 00 41 00 00  00 75 00 00 00 00 00 00  |.....A...u......|
+000000f0  00 2f ff 7f 40 88 03 80  40 35 8a 04 08 18 ff 7f  |./..@...@5......|
+00000100
+```
+
+Ничего не понятно, но очень интересно. Файл зашифрован, поэтому он так и выглядит. Убиваю все признаки малвары через `kill`, сохраняю эти файлы себе на основную тачку)
+
+P.S: Я пропатчил функцию `do_heartbeat()`, чтобы она шифровала файлы только в одной директории. Безопасность прежде всего)
+
+## Написание декриптора
+
+Начну разбирать, как расшифровать мой файл. Ранее я уже понял, что для шифрования используется алгоритм [[RC4]]. О нем я нашел следующую инофрмацию:
+
+Это потоковый шифр с переменным размером ключа. Работает в режиме [[OFB]]. Для шифрования использует `S`-блок размером 8x8. Его элементы представляют собой перестановку чисел от 0 до 255, а перестановка зависит от ключа переменной длины. В алгоритме используется два счетчика `i` и `j`, которые инициализируются нулями.
+
+Так же из кода я уже вытащил:
+
+```python
+master_key = 'Jfkdskfku2ir32y7432uroduw8y7318i9018urewfdsZ2Oaifwuieh~~cudsffdsd'
+```
+
+Второй ключ для файла я возьму из файла `important_file.txt.C_I_0P`. Через `wc` посмотрю его длину:
+
+```bash
+$ wc important_file.txt.C_I_0P                                                                                                                           
+       0       3     256 important_file.txt.C_I_0P
+```
+
+Можно увидеть, что всего в файле 256 символов. Но стоп, если вернуться к функции `EncrFile`, то можно увидеть, что малвара гинерирует `117` символов ключа:
+
+![[Pasted image 20250613004315.png]]
+
+Как часто шутят у меня в отделе, произошел киберобман) При первичном просмотре я не особо обратил внимание на функцию `CreateKey`, но вот сейчас она пригодится)
+
+![[Pasted image 20250613004029.png]]
+
+Действительно, пишет она 256 байт, из которых 117 - это ключ. Ключ хранится на стеке, в функцию передается его адрес. Значит в файл записывается часть стека. К интересно можно отнести `len`, так как это длина зашифрованной части файла.
+
+![[Pasted image 20250613010347.png]]
+
+Значит из файла `important_file.txt.C_I_0P` по смещению `0x75 + 0x58 + 0x8 + 0x4 + 0x4` лежит `len`. Так же можно заметить, что перед вызовом функции `CreateKey` ключ к файлу шифруется с помощью `ssKeyKey`.
+
+```C
+_rc4Full(szKeyKey, v3 - 1, rc4_key, 117u);
+Createkey(pathname, rc4_key);
+```
+
+Обобщив всю информацию можно составить следующий алгоритм для дешифрования:
+1. Взять имя зашифрованного файла;
+2. Прочитать файла состоящий из имени этого файла и расширением `.C_I_0P`;
+3. Расшифровать первые 117 байт с помощью алгоритма `RC4`, чтобы получить ключ для дешифровки файла;
+4. По смещению `0x75 + 0x58 + 0x8 + 0x4 + 0x4` получить длину зашифрованной части файла `len`;
+5. Расшифровать `len` байт зашифрованного файла, добавить оставшиеся байты и сохранить на диск;
+
+Напишу код на `Python`:
+
+```Python
+from arc4 import ARC4
+import sys
+import struct
+
+
+def get_file_key(file: str) -> bytes:
+    key_file_name = file + '.C_I_0P'
+
+    print(f'[*] Read encrypted file key from {key_file_name}')
+    with open(key_file_name, 'rb') as f:
+        key = f.readline()
+    return key
+
+
+def main(file: str) -> None:
+    master_key = (b'Jfkdskfku2ir32y7432uroduw8y7318i90'
+                  b'18urewfdsZ2Oaifwuieh~~cudsffdsd')
+    gen_len = 0x75
+
+    file_key = get_file_key(file)
+
+    print('[*] Extract encrypetd file len')
+
+    # 0x58 + 0x75 + 0x8 + 0x4 + 0x4
+    file_len_offset = 0x58 + 0x75 + 0x8 + 0x4 + 0x4
+    try:
+        encr_file_size = struct.unpack(
+                'Q',
+                file_key[file_len_offset: file_len_offset + 0x8]
+        )[0]
+    except struct.error:
+        print('[-] Wrong encrypted file len')
+
+    print('[*] Decrypt file key')
+    cryptor = ARC4(master_key)
+    file_rc4_key = cryptor.decrypt(file_key)[:gen_len]
+
+    with open(file, 'rb') as f:
+        crypted_file = f.read()
+        cryptor = ARC4(file_rc4_key)
+        decrypted_file = cryptor.decrypt(crypted_file[:encr_file_size])
+        decrypted_file += crypted_file[encr_file_size:]
+        decrypted_file_path = file + '.decrypted'
+        print(f'[*] Save decrypted file to {decrypted_file_path}')
+        with open(file + '.decrypted', 'wb') as f:
+            f.write(decrypted_file)
+    print('[*] Done')
+
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print(f'Usage {sys.argv[0]} <encrypted file>')
+    else:
+        main(sys.argv[1])
+```
+
+Протестировал на своем файле. Предлагаю и вам)

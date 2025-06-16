@@ -15,7 +15,7 @@ tags: [первый, тест]
 
 ## Запуск
 
-![IMG](/assets/images/Cl0p2_img/1.jpg)
+![IMG](/assets/images/Cl0p2_img/1.jpg){: .align-center}
 
 На виртуальной машине я создал файл с неким таинственным содержимым) Вам самим предстоит это узнать) Этот файл называется `important_file.txt`. После запуска рядом с ним появились 2 файла: `important_file.txt.C_I_0P` и `README_C_I_0P.TXT`. Как и ожидалось))
 

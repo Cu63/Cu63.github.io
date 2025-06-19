@@ -1,6 +1,6 @@
 ---
 title: "SQL injection UNION attack, determining the number of columns returned by the query"
-date: 2025-06-20
+date: 2025-06-19
 tags: [sqli, writeup, web]  
 tagline: ""
 header:

@@ -1,6 +1,6 @@
 ---
 title: "SQL injection UNION attack, determining the number of columns returned by the query"
-date: 2025-06-19
+date: 2025-06-20
 tags: [sqli, writeup, web]  
 tagline: ""
 header:
@@ -53,7 +53,7 @@ SELECT name, price FROM table WHERE category = 'Accessories' and false -- -'
 <details>
   <summary>Подробнее</summary>
   
-  `-- -` - это комментарий в SQL, с помощью него я убрал всю последующую часть запроса. В данном случае это лишняя кавычка, которая ломала бы запрос.
+  -- - - это комментарий в SQL, с помощью него я убрал всю последующую часть запроса. В данном случае это лишняя кавычка, которая ломала бы запрос.
 </details>
 <br>
 

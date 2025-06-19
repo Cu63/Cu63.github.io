@@ -85,8 +85,7 @@ defaults:
       type: posts
     values:
       layout: single
-      classes: wide
-      sidebar: false
+      classes: wide2
       author_profile: false
       read_time: true
       comments: true

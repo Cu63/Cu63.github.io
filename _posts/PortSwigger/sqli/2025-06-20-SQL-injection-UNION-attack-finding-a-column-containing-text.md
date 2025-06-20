@@ -2,10 +2,12 @@
 title: "SQL injection UNION attack, finding a column containing text"
 date: 2025-06-20
 tags: [sqli, writeup, web]  
+categories: [PortSwigger]
 tagline: ""
 header:
   overlay_image: /assets/images/ps_logo.webp
   overlay_filter: 0.5 
+  overlay_color: "#fff"
   actions:
     - label: "Lab PortSwigger"
       url: "https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-finding-columns-with-a-useful-data-type/sql-injection/union-attacks/lab-find-column-containing-text"

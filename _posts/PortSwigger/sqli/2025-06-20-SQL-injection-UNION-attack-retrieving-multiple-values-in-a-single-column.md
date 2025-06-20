@@ -2,10 +2,12 @@
 title: "SQL injection UNION attack retrieving multiple values in a single column"
 date: 2025-06-20
 tags: [sqli, writeup, web]  
+categories: [PortSwigger]
 tagline: ""
 header:
   overlay_image: /assets/images/ps_logo.webp
   overlay_filter: 0.5 
+  overlay_color: "#fff"
   actions:
     - label: "Lab PortSwigger"
       url: "https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-retrieving-multiple-values-within-a-single-column/sql-injection/union-attacks/lab-retrieve-multiple-values-in-single-column"

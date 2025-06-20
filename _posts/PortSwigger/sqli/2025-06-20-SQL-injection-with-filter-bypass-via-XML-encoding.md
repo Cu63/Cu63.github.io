@@ -2,10 +2,12 @@
 title: "SQL injection with filter bypass via XML encoding"
 date: 2025-06-20
 tags: [sqli, writeup, web]  
+categories: [PortSwigger]
 tagline: ""
 header:
   overlay_image: /assets/images/ps_logo.webp
   overlay_filter: 0.5 
+  overlay_color: "#fff"
   actions:
     - label: "Lab PortSwigger"
       url: "https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-in-different-contexts/sql-injection/lab-sql-injection-with-filter-bypass-via-xml-encoding"

@@ -1,6 +1,6 @@
 ---
 title: "File path traversal, traversal sequences stripped non-recursively"
-date: 2025-07-03
+date: 2025-07-04
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

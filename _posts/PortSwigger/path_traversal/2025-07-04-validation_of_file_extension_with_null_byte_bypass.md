@@ -1,6 +1,6 @@
 ---
 title: "File path traversal, validation of file extension with null byte bypass"
-date: 2025-07-03
+date: 2025-07-04
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

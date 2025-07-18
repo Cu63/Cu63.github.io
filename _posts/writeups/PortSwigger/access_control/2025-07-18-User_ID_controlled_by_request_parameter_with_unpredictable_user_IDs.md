@@ -1,6 +1,6 @@
 ---
 title: "User ID controlled by request parameter, with unpredictable user IDs"
-date: 2025-07-17
+date: 2025-07-18
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

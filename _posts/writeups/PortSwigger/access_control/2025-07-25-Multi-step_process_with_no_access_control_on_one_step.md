@@ -1,6 +1,6 @@
 ---
 title: "Multi-step process with no access control on one step"
-date: 2025-07-18
+date: 2025-07-25
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

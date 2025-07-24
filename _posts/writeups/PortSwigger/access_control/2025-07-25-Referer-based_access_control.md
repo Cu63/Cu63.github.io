@@ -1,6 +1,6 @@
 ---
 title: "Referer-based access control"
-date: 2025-07-25
+date: 2025-07-24
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

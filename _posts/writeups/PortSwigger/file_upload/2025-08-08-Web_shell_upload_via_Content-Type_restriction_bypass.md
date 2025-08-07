@@ -1,6 +1,6 @@
 ---
 title: "Web shell upload via Content-Type restriction bypass"
-date: 2025-08-07
+date: 2025-08-08
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

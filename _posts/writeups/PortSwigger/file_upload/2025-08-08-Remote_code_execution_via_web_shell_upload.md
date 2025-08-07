@@ -1,6 +1,6 @@
 ---
 title: "Remote code execution via web shell upload"
-date: 2025-08-08
+date: 2025-08-07
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

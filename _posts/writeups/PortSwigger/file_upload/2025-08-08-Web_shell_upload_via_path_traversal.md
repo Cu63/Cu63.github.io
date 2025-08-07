@@ -1,6 +1,6 @@
 ---
 title: "Web shell upload via path traversal"
-date: 2025-08-07
+date: 2025-08-08
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

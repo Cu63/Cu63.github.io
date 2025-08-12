@@ -5,7 +5,7 @@ tags: [hash, crackme]
 categories: [Crypto]
 tagline: ""
 header:
-  overlay_image: /assets/images/IMG_writeups/IMG_Crypto/IMG_сrack_archive/crackme_logo2.jpg
+  overlay_image: /assets/images/IMG_writeups/IMG_Crypto/IMG_сrack_archive/crackme_logo.jpg
   overlay_filter: 0.5 
   overlay_color: "#fff"
 ---

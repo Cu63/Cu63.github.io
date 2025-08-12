@@ -1,6 +1,6 @@
 ---
 title: "Взлом архива"
-date: 2025-08-11
+date: 2025-08-12
 tags: [hash, crackme]  
 categories: [Crypto]
 tagline: ""

@@ -1,6 +1,6 @@
 ---
 title: "Web shell upload via extension blacklist bypass"
-date: 2025-08-14
+date: 2025-08-15
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

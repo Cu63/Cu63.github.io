@@ -1,6 +1,6 @@
 ---
 title: "Web shell upload via obfuscated file extension"
-date: 2025-08-15
+date: 2025-08-14
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

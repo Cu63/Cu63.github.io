@@ -85,7 +85,7 @@ Content-Length: 19
 
 Перебором `ip` адресов я нашел, что нужный нам — это `192.168.0.53`. Получим код страницы с админ панелью с помощью запроса на адрес `http://192.168.0.53:8080/admin`:
 
-![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_ssrf/IMG_Basic_SSRF_against_another_back-end_system/1.png){: height="200" .align-center}
+![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_ssrf/IMG_Basic_SSRF_against_another_back-end_system/1.jpg){: height="200" .align-center}
 
 Для удаления пользователя отправим запроса на адрес `http://192.168.0.53:8080/admin/delete?username=carlos` и затем проверим ответ:
 

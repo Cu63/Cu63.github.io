@@ -13,7 +13,7 @@ header:
       url: "https://portswigger.net/web-security/learning-paths/server-side-vulnerabilities-apprentice/ssrf-apprentice/ssrf/lab-basic-ssrf-against-backend-system"
 classes: wide
 ---
-
+{% raw %}
 Эта лаба содержит уязвимость **SSRF** (Server-side request forgery).
 
 Для прохождения лабы нам нужно найти `ip`-адрес бекенд сервиса, на котором расположена панель администратора `/admin` на порту `8080`, а затем удалить пользователя `carlos`.
@@ -90,3 +90,4 @@ Content-Length: 19
 Для удаления пользователя отправим запроса на адрес `http://192.168.0.53:8080/admin/delete?username=carlos` и затем проверим ответ:
 
 ![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_ssrf/IMG_Basic_SSRF_against_another_back-end_system/2.png){: height="200" .align-center}
+{% endraw %}

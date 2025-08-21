@@ -13,7 +13,7 @@ header:
       url: "https://portswigger.net/web-security/learning-paths/ssrf-attacks/ssrf-attacks-circumventing-defenses/ssrf/lab-ssrf-with-blacklist-filter#"
 classes: wide
 ---
-
+{% raw %}
 Эта лаба содержит уязвимость **SSRF** (Server-side request forgery).
 
 Для ее решения нужно получить доступ к интерфейсу админа `http://localhost/admin` и удалить пользователя `carlos`.
@@ -99,7 +99,7 @@ http://127.1/%25%36%31%64%6d%69%6e - OK
 
 На полученной странице видно следующее:
 
-![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_ssrf/IMG_SSRF_with_blacklist-based_input_filter/1.png){: height="200" .align-center}
+![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_ssrf/IMG_SSRF_with_blacklist-based_input_filter/1.jpg){: height="200" .align-center}
 
 Для удаления пользователя нужно использовать ручку `/admin/delete?username=carlos`. Попробую использовать это, закодировав путь дважды:
 
@@ -120,3 +120,4 @@ Content-Length: 0
 Пользователь успешно удален:
 
 ![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_ssrf/IMG_SSRF_with_blacklist-based_input_filter/2.png){: height="200" .align-center}
+{% endraw %}

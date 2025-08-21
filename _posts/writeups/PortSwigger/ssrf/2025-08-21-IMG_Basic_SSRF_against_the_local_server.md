@@ -1,6 +1,6 @@
 ---
 title: "Basic SSRF against the local server"
-date: 2025-07-22
+date: 2025-08-21
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

@@ -72,7 +72,7 @@ stockApi=http%3A%2F%2Fstock.weliketoshop.net%3A8080%2Fproduct%2Fstock%2Fcheck%3F
 	</div>
 </section>
 ```
-{% raw %}
+{% endraw %}
 
 Из кода страницы понятно, что для удаления пользователя `carlos` нам нужно отправить следующий `HTTP`-запрос: `http://localhost/admin/delete?username=carlos`. Отправим запрос и проверим результат.
 

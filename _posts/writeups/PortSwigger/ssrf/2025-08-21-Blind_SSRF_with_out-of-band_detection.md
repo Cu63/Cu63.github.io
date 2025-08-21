@@ -13,7 +13,7 @@ header:
       url: "https://portswigger.net/web-security/learning-paths/ssrf-attacks/ssrf-attacks-blind-ssrf-vulnerabilities/ssrf/blind/lab-out-of-band-detection"
 classes: wide
 ---
-
+{% raw %}
 Для решения лабы нужно отправить запроса на `Burp Collaborator`.
 
 ```
@@ -84,3 +84,4 @@ Content-Length: 3913
 
 ![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_ssrf/IMG_Blind_SSRF_with_out-of-band_detection/2.png){: height="200" .align-center}
 
+{% endraw %}

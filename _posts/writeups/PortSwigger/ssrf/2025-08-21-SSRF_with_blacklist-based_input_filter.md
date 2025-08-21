@@ -1,6 +1,6 @@
 ---
 title: "SSRF with blacklist-based input filter"
-date: 2025-07-22
+date: 2025-08-21
 tags: [web, writeup]  
 categories: [PortSwigger]
 tagline: ""

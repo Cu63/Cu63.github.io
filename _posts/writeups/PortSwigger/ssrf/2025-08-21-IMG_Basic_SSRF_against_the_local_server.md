@@ -13,7 +13,7 @@ header:
       url: "https://portswigger.net/web-security/learning-paths/server-side-vulnerabilities-apprentice/ssrf-apprentice/ssrf/lab-basic-ssrf-against-localhost"
 classes: wide
 ---
-
+{% raw %}
 Эта лаба содержит уязвимость **SSRF** (Server-side request forgery).
 
 Нужно получить доступ к интерфейсу админа `http://localhost/admin` и удалить пользователя `carlos`.
@@ -72,6 +72,7 @@ stockApi=http%3A%2F%2Fstock.weliketoshop.net%3A8080%2Fproduct%2Fstock%2Fcheck%3F
 	</div>
 </section>
 ```
+{% raw %}
 
 Из кода страницы понятно, что для удаления пользователя `carlos` нам нужно отправить следующий `HTTP`-запрос: `http://localhost/admin/delete?username=carlos`. Отправим запрос и проверим результат.
 

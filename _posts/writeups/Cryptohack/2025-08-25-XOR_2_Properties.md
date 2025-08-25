@@ -1,6 +1,6 @@
 ---
 title: "CryptoHack Lab. XOR-2. Properties"
-date: 2025-07-19
+date: 2025-08-25
 tags: [crypto, writeup]  
 categories: [Crypto]
 tagline: ""

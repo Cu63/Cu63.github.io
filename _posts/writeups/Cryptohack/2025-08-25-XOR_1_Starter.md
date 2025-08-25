@@ -25,12 +25,33 @@ label
 
 Таблица истиности:
 
-| a   | b   | a XOR b |
-| --- | --- | ------- |
-| 0   | 0   | 0       |
-| 0   | 1   | 1       |
-| 1   | 0   | 1       |
-| 1   | 1   | 0       |
+<table align="center">
+  <tr>
+    <th align="center">a</th>
+    <th align="center">b</th>
+    <th align="center">a XOR b</th>
+  </tr>
+  <tr>
+    <td align="center">0</td>
+    <td align="center">0</td>
+    <td align="center">0</td>
+  </tr>
+  <tr>
+    <td align="center">0</td>
+    <td align="center">1</td>
+    <td align="center">1</td>
+  </tr>
+  <tr>
+    <td align="center">1</td>
+    <td align="center">0</td>
+    <td align="center">1</td>
+  </tr>
+  <tr>
+    <td align="center">1</td>
+    <td align="center">1</td>
+    <td align="center">0</td>
+  </tr>
+</table>
 
 Результат `XOR` обратим. Повторное использование операции между теми же операндами, вернет к первоначальному значению. Т.е. `123 ^ 13 ^ 13 = 123`. Благодаря этому `XOR` часто используют в криптографии. Операция легко реализуется и достаточно быстро выполняется.
 

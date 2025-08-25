@@ -1,6 +1,6 @@
 ---
 title: "CryptoHack Lab. Bytes and Big Integers"
-date: 2025-07-19
+date: 2025-08-25
 tags: [crypto, writeup]  
 categories: [Crypto]
 tagline: ""

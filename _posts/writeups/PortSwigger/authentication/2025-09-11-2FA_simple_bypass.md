@@ -1,6 +1,6 @@
 ---
 title: "2FA simple bypass"
-date: 2025-09-12
+date: 2025-09-11
 tags: [web, authentication, writeup]  
 categories: [PortSwigger]
 tagline: ""

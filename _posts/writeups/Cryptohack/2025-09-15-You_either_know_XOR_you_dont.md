@@ -1,6 +1,6 @@
 ---
 title: "CryptoHack Lab. You either know, XOR you don't"
-date: 2025-08-02
+date: 2025-09-15
 tags: [crypto, writeup]  
 categories: [Crypto]
 tagline: ""

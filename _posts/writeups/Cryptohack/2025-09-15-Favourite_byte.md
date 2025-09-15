@@ -1,6 +1,6 @@
 ---
 title: "CryptoHack Lab. Favourite byte"
-date: 2025-08-02
+date: 2025-09-15
 tags: [crypto, writeup]  
 categories: [Crypto]
 tagline: ""

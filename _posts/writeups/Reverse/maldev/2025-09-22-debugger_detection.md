@@ -74,7 +74,7 @@ if (ptrace(PTRACE_GETREGS, target_pid, NULL, &old_regs) < 0) {
 }
 ```
 
-- `PTRACE_SETREGS` — записывает состояние регистров процесса.
+- `PTRACE_SETREGS` — записывает состояние регистров процесса;
 
 ```c
 struct user_regs_struct regs;

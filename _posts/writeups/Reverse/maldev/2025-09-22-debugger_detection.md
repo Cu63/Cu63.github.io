@@ -98,7 +98,7 @@ if (ptrace(PTRACE_CONT, pid, NULL, NULL) < 0) {
 
 ### Пример
 
-[`linux_ex.c`](/assets/files/FILE_writeups/FILE_Reverse/FILE_maldev/FILE_debugger_detection/linux_ex.c).
+<!-- [`linux_ex.c`](/assets/files/FILE_writeups/FILE_Reverse/FILE_maldev/FILE_debugger_detection/linux_ex.c). -->
 
 ```c
 #include <stdio.h>

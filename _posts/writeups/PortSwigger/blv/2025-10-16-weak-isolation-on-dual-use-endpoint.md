@@ -51,7 +51,7 @@ Te: trailers
 csrf=kf1PryYuLmGb1EnKO7Z5MdvbjOlXG50c&username=wiener&current-password=peter&new-password-1=1&new-password-2=1
 ```
 
-Попроюбую изменить пароль без поля `current-password`:
+Попробую изменить пароль без поля `current-password`:
 
 ```http
 POST /my-account/change-password HTTP/2

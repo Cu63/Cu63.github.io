@@ -32,4 +32,4 @@ author_profile: true
 
 # Выступления
 
-- VolgaCTF 17/09/25 | [Бесфайловые атаки Linux](https://www.youtube.com/watch?v=TSDjmv3MSDE&t=0s) | [презентация](http://archive.volgactf.ru/volgactf_2025/slides/VolgaCTF_2025_Urusov.pdf) 
+- VolgaCTF 17.09.25 / [Бесфайловые атаки Linux](https://www.youtube.com/watch?v=TSDjmv3MSDE&t=0s) / [презентация](http://archive.volgactf.ru/volgactf_2025/slides/VolgaCTF_2025_Urusov.pdf) 

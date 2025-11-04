@@ -5,7 +5,7 @@ tags: []
 categories: [Maldev]
 tagline: ""
 header:
-  overlay_image: /assets/images/IMG_Maldev/IMG_tg_session_steal/tg_session_steal_logo.webp
+  overlay_image: /assets/images/IMG_Maldev/IMG_tg_session_steal/tg_session_steal_logo.png.webp
   overlay_filter: 0.5 
   overlay_color: "#fff"
 classes: half

@@ -1,5 +1,5 @@
 ---
-title: "Flawed enforcement of business rules"
+title: "Infinite money logic flaw"
 date: 2025-11-06
 tags: [web, writeup]  
 categories: [PortSwigger]

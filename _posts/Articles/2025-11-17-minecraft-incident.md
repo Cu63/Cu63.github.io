@@ -45,7 +45,7 @@ toc_label: "Оглавление"
 
 Немного погуляв по дискордику, я нашел ник `Ogmur`, и, чутка погуглив, обнаружил это:
 
-<iframe width="640" height="360" src="https://www.youtube.com/watch?v=aRjJpeY7ScY?controls=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/aRjJpeY7ScY?controls=0" frameborder="0" allowfullscreen></iframe>
 
 # Время ~~приключений~~ расследований
 

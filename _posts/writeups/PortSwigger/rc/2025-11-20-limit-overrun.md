@@ -14,7 +14,7 @@ header:
 classes: wide
 ---		
 
-Лаба содержит уязвимость типа `Race condition`. Для решения необходимо купить `Lightweight L33t Leather Jacket`. Для входа доступны креды `winere`:`peter`.
+Лаба содержит уязвимость типа `Race condition`. Для решения необходимо купить `Lightweight L33t Leather Jacket`. Для входа доступны креды `wiener`:`peter`.
 
 ```
 https://0a30007f04cd108d814b48510086008f.web-security-academy.net/

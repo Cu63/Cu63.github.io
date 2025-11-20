@@ -10,7 +10,7 @@ header:
   overlay_color: "#fff"
   actions:
     - label: "Lab PortSwigger"
-      url: "https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-detecting-and-exploiting-with-turbo-intruder/race-conditions/lab-race-conditions-bypassing-rate-limits"
+      url: "https://portswigger.net/web-security/race-conditions/lab-race-conditions-bypassing-rate-limits"
 classes: wide
 ---																								
 

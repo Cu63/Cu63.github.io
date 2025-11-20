@@ -10,7 +10,7 @@ header:
   overlay_color: "#fff"
   actions:
     - label: "Lab PortSwigger"
-      url: "https://portswigger.net/web-security/learning-paths/race-conditions/race-conditions-detecting-and-exploiting-with-burp-repeater/race-conditions/lab-race-conditions-limit-overrun"
+      url: "https://portswigger.net/web-security/race-conditions/lab-race-conditions-limit-overrun"
 classes: wide
 ---		
 

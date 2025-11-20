@@ -26,6 +26,8 @@ https://0a0d00fd03552cc28082306900f6007f.web-security-academy.net/
 
 ![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_rc/IMG_bypassing-rate-limits/1.png){: height="200" .align-center}
 
+![IMG](/assets/images/IMG_writeups/IMG_PortSwigger/IMG_rc/IMG_bypassing-rate-limits/6.jpg){: height="200" .align-center}
+
 Итак, сперва я решил, теперь буду писать... Но конкурс "угнать за 15 минут" мне понравился. Повторять конечно же я не буду, но все же)
 
 Я знаю из условия, что стоит защита от брутфорса)

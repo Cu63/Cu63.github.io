@@ -101,15 +101,15 @@ classes: wide
 
 Замечательно. С головой все в порядке. Ну так уж и быть. Пропатчу строку перед вызовом `strcmp`. Делов-то:
 
-1. Дойду до нужного брейкпоинта:
+- Дойду до нужного брейкпоинта:
 
 ![IMG](/assets/images/IMG_writeups/IMG_Reverse/IMG_Pwn_Season/IMG_want-the-flag/12.png){: height="200" .align-center}
 
-2. Изменю память командой `set {char[0x11]} 0x60b040 = "I_WANT_THE_FLAG!"`:
+- Изменю память командой `set {char[0x11]} 0x60b040 = "I_WANT_THE_FLAG!"`:
 
 ![IMG](/assets/images/IMG_writeups/IMG_Reverse/IMG_Pwn_Season/IMG_want-the-flag/13.png){: height="200" .align-center}
 
-3. Продолжу нормальное выполнение программы с помощью `continue/c`:
+- Продолжу нормальное выполнение программы с помощью `continue/c`:
 
 ![IMG](/assets/images/IMG_writeups/IMG_Reverse/IMG_Pwn_Season/IMG_want-the-flag/14.png){: height="200" .align-center}
 

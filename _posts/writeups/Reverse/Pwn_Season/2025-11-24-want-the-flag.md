@@ -11,7 +11,11 @@ header:
   actions:
     - label: "Pwn Season"
       url: "https://pwn.spbctf.ru/tasks/pwn1_mc2_2"
-classes: wide
+classes: half
+layout: single
+toc: true
+toc_sticky: true
+toc_label: "Оглавление"
 ---
 
 Убедите бинарник, что ХОТИТЕ флаг.

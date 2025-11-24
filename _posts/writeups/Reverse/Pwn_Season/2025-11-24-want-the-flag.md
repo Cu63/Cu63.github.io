@@ -5,7 +5,7 @@ tags: [pwn, writeup]
 categories: [Reverse]
 tagline: ""
 header:
-  overlay_image: /assets/images/IMG_writeups/IMG_Reverse/IMG_forkbomb/forkbomb_logo.jpg
+  overlay_image: /assets/images/IMG_writeups/IMG_Reverse/IMG_Pwn_Season/Pwn_Season_logo.jpg
   overlay_filter: 0.5 
   overlay_color: "#fff"
   actions:

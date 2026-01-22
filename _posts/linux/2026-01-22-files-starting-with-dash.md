@@ -9,14 +9,17 @@ tags:
   - cli
   - security
   - automation
+header:
+  overlay_image: /assets/images/linux/dash/dash_logo.png
+  overlay_filter: 0.5 
+  overlay_color: "#fff"
+layout: single
+classes: half
 layout: single
 toc: true
-toc_label: "Содержание"
+toc_sticky: true
+toc_label: "Оглавление"
 toc_icon: "list"
-author_profile: false
-read_time: true
-comments: true
-share: true
 ---
 
 Привет^3

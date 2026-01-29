@@ -1,6 +1,6 @@
 ---
 title: "Простые LKM: фундамент для kernel-руткитов"
-date: 2026-01-XX
+date: 2026-01-29
 tags:
   - linux
   - kernel

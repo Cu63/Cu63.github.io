@@ -5,7 +5,7 @@ tags: [Linux, LKM, Rootkits, Kernel]
 categories: [Linux, Security]
 tagline: ""
 header:
-  overlay_image: /assets/images/file-device-drivers/IMG_file-device-drivers_header
+  overlay_image: /assets/images/linux/file-device-drivers/IMG_file-device-drivers_header.jpeg
   overlay_filter: 0.5
   overlay_color: "#000"
 classes: wide

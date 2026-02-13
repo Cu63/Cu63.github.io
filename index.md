@@ -36,4 +36,4 @@ author_profile: true
 
 - Школа21 2024 / Реверс-инжиниринг / [презентация](https://github.com/Cu63/Cu63.github.io/blob/master/assets/files/FILE_about_me/%D0%A0%D0%B5%D0%B2%D0%B5%D1%80%D1%81-%D0%B8%D0%BD%D0%B6%D0%B8%D0%BD%D0%B8%D1%80%D0%B8%D0%BD%D0%B3.pdf)
 - VolgaCTF 2025 / [Бесфайловые атаки Linux](https://www.youtube.com/watch?v=TSDjmv3MSDE&t=0s) / [презентация](https://github.com/Cu63/Cu63.github.io/blob/master/assets/files/FILE_about_me/VolgaCTF_presentation.pdf) 
-- [Реверс-шелл с самого начала. Как заставить сервер подключиться к нам](https://xakep.ru/2026/02/13/reverse-shell-for-beginners/)
+- xakep.ru / [Реверс-шелл с самого начала. Как заставить сервер подключиться к нам](https://xakep.ru/2026/02/13/reverse-shell-for-beginners/)

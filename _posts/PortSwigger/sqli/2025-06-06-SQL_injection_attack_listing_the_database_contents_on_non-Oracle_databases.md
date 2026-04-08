@@ -1,7 +1,7 @@
 ---
 title: "SQL injection attack, listing the database contents on non-Oracle databases"
 date: 2025-06-06
-tags: [web, writeup]  
+tags: [sqli, writeup, web]
 categories: [PortSwigger]
 tagline: ""
 header:

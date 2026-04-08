@@ -1,8 +1,8 @@
 ---
 title: "Изменение счетчика ссылок LKM"
 date: 2026-02-26
-categories: [Linux, Rootkits]
-tags: [LKM, Linux Kernel, Rootkit, Detection, Refcount]
+categories: [linux]
+tags: [lkm, kernel, rootkit, detection, refcount]
 tagline: "Удали если сможешь..."
 header:
   overlay_image: /assets/images/linux/LKM-refcount-change/header.jpeg

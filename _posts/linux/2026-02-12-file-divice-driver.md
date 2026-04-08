@@ -1,8 +1,8 @@
 ---
 title: "Драйверы файловых устройств"
 date: 2026-02-12
-tags: [Linux, LKM, Rootkits, Kernel]
-categories: [Linux, Security]
+tags: [linux, lkm, rootkits, kernel]
+categories: [linux]
 tagline: ""
 header:
   overlay_image: /assets/images/linux/file-device-drivers/IMG_file-device-drivers_header.jpeg

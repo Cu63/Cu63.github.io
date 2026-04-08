@@ -1,7 +1,7 @@
 ---
 title: "Blind SQL injection with time delays and information retrieval"
 date: 2025-06-13
-tags: [web, writeup]  
+tags: [sqli, writeup, web]
 categories: [PortSwigger]
 tagline: ""
 header:

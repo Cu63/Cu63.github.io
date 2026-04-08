@@ -1,7 +1,7 @@
 ---
 title: "Кража сессии телеграм"
 date: 2025-11-03
-tags: []  
+tags: [maldev, malware, writeup]
 categories: [Maldev]
 tagline: ""
 header:

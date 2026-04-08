@@ -1,7 +1,7 @@
 ---
 title: "SQL injection attack, querying the database type and version on Oracle"
 date: 2025-06-06
-tags: [web, writeup]  
+tags: [sqli, writeup, web]
 categories: [PortSwigger]
 tagline: ""
 header:

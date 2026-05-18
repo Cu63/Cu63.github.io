@@ -38,3 +38,6 @@ author_profile: true
 - VolgaCTF 2025 / [Бесфайловые атаки Linux](https://www.youtube.com/watch?v=TSDjmv3MSDE&t=0s) / [презентация](https://github.com/Cu63/Cu63.github.io/blob/master/assets/files/FILE_about_me/VolgaCTF_presentation.pdf) 
 - xakep.ru / [Реверс-шелл с самого начала. Как заставить сервер подключиться к нам](https://xakep.ru/2026/02/13/reverse-shell-for-beginners/)
 - xakep.ru / [Мощные аргументы. Блокируем запуск процессов в Linux через переменные окружения](https://xakep.ru/2026/03/27/argmax-exploit/)
+- xakep.ru / [Гора с секретами. Скрываем процессы в Linux c помощью mount](https://xakep.ru/2026/05/15/mount-hiding/)
+- Пакет Безопасности / [Реверс инжиниринг малвари: как работает вирус изнутри](https://youtu.be/hFemA-ISHxY)
+- Пакет Безопасности / [ВИРУСНАЯ АНАЛИТИКА: Реверс-инжиниринг, анализ вредоносов, инструменты и подходы](https://www.youtube.com/watch?v=qJLxyaQGBAQ)
